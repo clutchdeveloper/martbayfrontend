@@ -29,7 +29,7 @@ function ProductCard(props) {
   return (
     <>
       <div className={`col-3 ${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}>
-        <Link to={`${location.pathname !== "/" ? "/product/:id" : location.pathname == "/product/:id" ? "/product/:id" : ":id"}`} className="product-card position-relative">
+        <Link to={`${location.pathname !== "/:id" ? "/product/:id" : location.pathname == "/product/:id" ? "/product/:id" : ":id"}`} className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <button className="border-0 bg-transparent">
               <AiOutlineHeart className="icon" />
