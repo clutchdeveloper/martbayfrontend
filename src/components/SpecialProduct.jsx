@@ -5,19 +5,19 @@ import { Rating } from "react-simple-star-rating";
 import watch from "../images/watch-4.jpg";
 
 function SpecialProduct() {
-    // const [rating, setRating] = useState(0);
+    const [rating, setRating] = useState(0);
 
-    // // Catch Rating value
-    // const handleRating = (rate: number) => {
-    //   setRating(rate);
+    // Catch Rating value
+    const handleRating = (rate) => {
+      setRating(rate);
 
-    //   // other logic
-    // };
+      // other logic
+    };
 
-    // // Optinal callback functions
-    // const onPointerEnter = () => console.log("Enter");
-    // const onPointerLeave = () => console.log("Leave");
-    // const onPointerMove = (value: number, index: number) => console.log(value, index);
+    // Optinal callback functions
+    const onPointerEnter = () => console.log("Enter");
+    const onPointerLeave = () => console.log("Leave");
+    const onPointerMove = (value, index) => console.log(value, index);
   return (
     <div className="col-6 mb-3">
       <div className="special-product-card">
@@ -29,10 +29,10 @@ function SpecialProduct() {
             <h5 className="brand">Haweui</h5>
             <h6 className="title">Samsung Galaxy Note10+ Mobile Phone; Sim..</h6>
             <Rating
-              // onClick={handleRating}
-              // onPointerEnter={onPointerEnter}
-              // onPointerLeave={onPointerLeave}
-              // onPointerMove={onPointerMove}
+              onClick={handleRating}
+              onPointerEnter={onPointerEnter}
+              onPointerLeave={onPointerLeave}
+              onPointerMove={onPointerMove}
               /* Available Props */
               size={24}
               initialValue={3}

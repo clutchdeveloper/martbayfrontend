@@ -13,19 +13,19 @@ function SingleProduct() {
   const props = { width: 400, height: 600, zoomWidth: 600, img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg" };
   const [orderedProduct, setOrderedProduct] = useState(true);
 
-  // const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(0);
 
-  // // Catch Rating value
-  // const handleRating = (rate: number) => {
-  //   setRating(rate);
+  // Catch Rating value
+  const handleRating = (rate) => {
+    setRating(rate);
 
-  //   // other logic
-  // };
+    // other logic
+  };
 
-  // // Optinal callback functions
-  // const onPointerEnter = () => console.log("Enter");
-  // const onPointerLeave = () => console.log("Leave");
-  // const onPointerMove = (value: number, index: number) => console.log(value, index);
+  // Optinal callback functions
+  const onPointerEnter = () => console.log("Enter");
+  const onPointerLeave = () => console.log("Leave");
+  const onPointerMove = (value, index) => console.log(value, index);
 
 
 

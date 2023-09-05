@@ -13,19 +13,19 @@ function ProductCard(props) {
   const { grid } = props;
   let location = useLocation();
 
-  // const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(0);
 
-  // // Catch Rating value
-  // const handleRating = (rate: number) => {
-  //   setRating(rate);
+  // Catch Rating value
+  const handleRating = (rate) => {
+    setRating(rate);
 
-  //   // other logic
-  // };
+    // other logic
+  };
 
-  // Optinal callback functions
-  // const onPointerEnter = () => console.log("Enter");
-  // const onPointerLeave = () => console.log("Leave");
-  // const onPointerMove = (value: number, index: number) => console.log(value, index);
+  //Optinal callback functions
+  const onPointerEnter = () => console.log("Enter");
+  const onPointerLeave = () => console.log("Leave");
+  const onPointerMove = (value, index) => console.log(value, index);
   return (
     <>
       <div className={`col-3 ${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}>
@@ -43,10 +43,10 @@ function ProductCard(props) {
             <h6 className="brand">Haweui</h6>
             <h5 className="product-title">Kids headphones bulk 10 pack multi colored for students</h5>
             <Rating
-              // onClick={handleRating}
-              // onPointerEnter={onPointerEnter}
-              // onPointerLeave={onPointerLeave}
-              // onPointerMove={onPointerMove}
+              onClick={handleRating}
+              onPointerEnter={onPointerEnter}
+              onPointerLeave={onPointerLeave}
+              onPointerMove={onPointerMove}
               /* Available Props */
               size={24}
               initialValue={3}
