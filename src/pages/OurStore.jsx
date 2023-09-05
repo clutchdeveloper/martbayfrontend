@@ -17,17 +17,17 @@ function OurStore() {
 
   const [rating, setRating] = useState(0);
 
-  // Catch Rating value
-  // const handleRating = (rate: number) => {
-  //   setRating(rate);
+  //Catch Rating value
+  const handleRating = (rate) => {
+    setRating(rate);
 
-  //   // other logic
-  // };
+    // other logic
+  };
 
-  // // Optinal callback functions
-  // const onPointerEnter = () => console.log("Enter");
-  // const onPointerLeave = () => console.log("Leave");
-  // const onPointerMove = (value: number, index: number) => console.log(value, index);
+  // Optinal callback functions
+  const onPointerEnter = () => console.log("Enter");
+  const onPointerLeave = () => console.log("Leave");
+  const onPointerMove = (value, index) => console.log(value, index);
   return (
     <>
       <Meta title="Store" />
@@ -116,10 +116,10 @@ function OurStore() {
                     <div className="w-50 d-flex flex-column">
                       <h5>Kids headphones bulk 10 pack multi colored for students</h5>
                       <Rating
-                        // onClick={handleRating}
-                        // onPointerEnter={onPointerEnter}
-                        // onPointerLeave={onPointerLeave}
-                        // onPointerMove={onPointerMove}
+                        onClick={handleRating}
+                        onPointerEnter={onPointerEnter}
+                        onPointerLeave={onPointerLeave}
+                        onPointerMove={onPointerMove}
                         /* Available Props */
                         size={24}
                         initialValue={3}
@@ -135,10 +135,10 @@ function OurStore() {
                     <div className="w-50 d-flex flex-column">
                       <h5>Kids headphones bulk 10 pack multi colored for students</h5>
                       <Rating
-                        // onClick={handleRating}
-                        // onPointerEnter={onPointerEnter}
-                        // onPointerLeave={onPointerLeave}
-                        // onPointerMove={onPointerMove}
+                        onClick={handleRating}
+                        onPointerEnter={onPointerEnter}
+                        onPointerLeave={onPointerLeave}
+                        onPointerMove={onPointerMove}
                         /* Available Props */
                         size={24}
                         initialValue={3}
@@ -157,8 +157,9 @@ function OurStore() {
                     <p className="mb-0 d-block" style={{ width: "100%" }}>
                       Sort By
                     </p>
-                    <select name="" class="form-control form-select py-1 sort" id="">
-                      <option selected="">Featured</option>
+                  <select name="" defaultValue={"DEFAULT"} className="form-control form-select py-1 sort" id="">
+
+                      <option value={"manual"}>Featured</option>
                       <option>Alphabetically, A-Z</option>
                       <option>Alphabetically, Z-A</option>
                       <option>Best Selling</option>
