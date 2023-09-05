@@ -116,10 +116,10 @@ function OurStore() {
                     <div className="w-50 d-flex flex-column">
                       <h5>Kids headphones bulk 10 pack multi colored for students</h5>
                       <Rating
-                        onClick={handleRating}
-                        onPointerEnter={onPointerEnter}
-                        onPointerLeave={onPointerLeave}
-                        onPointerMove={onPointerMove}
+                        // onClick={handleRating}
+                        // onPointerEnter={onPointerEnter}
+                        // onPointerLeave={onPointerLeave}
+                        // onPointerMove={onPointerMove}
                         /* Available Props */
                         size={24}
                         initialValue={3}
@@ -135,10 +135,10 @@ function OurStore() {
                     <div className="w-50 d-flex flex-column">
                       <h5>Kids headphones bulk 10 pack multi colored for students</h5>
                       <Rating
-                        onClick={handleRating}
-                        onPointerEnter={onPointerEnter}
-                        onPointerLeave={onPointerLeave}
-                        onPointerMove={onPointerMove}
+                        // onClick={handleRating}
+                        // onPointerEnter={onPointerEnter}
+                        // onPointerLeave={onPointerLeave}
+                        // onPointerMove={onPointerMove}
                         /* Available Props */
                         size={24}
                         initialValue={3}
