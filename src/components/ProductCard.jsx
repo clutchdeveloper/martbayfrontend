@@ -26,39 +26,42 @@ function ProductCard(props) {
   const onPointerEnter = () => console.log("Enter");
   const onPointerLeave = () => console.log("Leave");
   const onPointerMove = (value, index) => console.log(value, index);
+  //{`col-3 ${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}
   return (
     <>
-      <div className={`col-3 ${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}>
-        <Link to={`${location.pathname !== "/:id" ? "/product/:id" : location.pathname == "/product/:id" ? "/product/:id" : ":id"}`} className="product-card position-relative">
-          <div className="wishlist-icon position-absolute">
+      <div className="w-full flex flex-col bg-red-300">
+        <Link to={`${location.pathname !== "/:id" ? "/product/:id" : location.pathname == "/product/:id" ? "/product/:id" : ":id"}`} className="relative">
+          <div className="absolute">
             <button className="border-0 bg-transparent">
               <AiOutlineHeart className="icon" />
             </button>
           </div>
           <div className="product-image">
-            <img src={watch} className="img-fluid" alt="product image" />
-            <img src={tv} className="img-fluid" alt="product image" />
+            <img src={watch} className="w-full" alt="product image" />
+            <img src={tv} className="w-full" alt="product image" />
           </div>
           <div className="product-details">
             <h6 className="brand">Haweui</h6>
             <h5 className="product-title">Kids headphones bulk 10 pack multi colored for students</h5>
-            <Rating
-              onClick={handleRating}
-              onPointerEnter={onPointerEnter}
-              onPointerLeave={onPointerLeave}
-              onPointerMove={onPointerMove}
-              /* Available Props */
-              size={24}
-              initialValue={3}
-              readonly={true}
-            />
+            <div className="flex">
+              <Rating
+                onClick={handleRating}
+                onPointerEnter={onPointerEnter}
+                onPointerLeave={onPointerLeave}
+                onPointerMove={onPointerMove}
+                /* Available Props */
+                size={24}
+                initialValue={3}
+                readonly={true}
+              />
+            </div>
             <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vel eius modi culpa placeat harum repudiandae eligendi possimus voluptatibus. Incidunt.
             </p>
             <p className="price">$100.00</p>
           </div>
-          <div className="action-bar position-absolute">
-            <div className="d-flex flex-column">
+          <div className="absolute top-0">
+            <div className="flex flex-col">
               <button className="border-0 my-1 bg-transparent">
                 <FaRegEye className="icon" />
               </button>

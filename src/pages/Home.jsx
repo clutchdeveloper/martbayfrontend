@@ -165,35 +165,36 @@ function Home() {
         </div>
       </div>
 
-      <div className="featured-wrapper py-5 ">
-        <div className="row">
+      <div className="w-full py-5 ">
+        <div className="w-full mx-auto max-w-7xl flex flex-col items-center">
           <div className="col-12">
             <h3 className="section-heading ">Featured Collection</h3>
           </div>
-
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <div className="w-full  grid center grid-cols-1 md:grid-cols-4">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
         </div>
       </div>
 
-      <div class1="famous-wrapper py-5 home-wrapper-2">
-        <div className="row">
-          <div className="col-3">
-            <div className="famous-card position-relative">
-              <img src={famous1} className="img-fluid" alt="famous" />
-              <div className="famous-content position-absolute">
+      <div class1="w-full py-5">
+        <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="">
+            <div className="relative">
+              <img src={famous1} className="w-full h-[400px]" alt="famous" />
+              <div className="absolute top-0">
                 <h5 className="text-dark">Big Screen</h5>
                 <h6 className="text-dark">Smart Watch Series ?</h6>
                 <p className="text-dark">From $399 or $10.02/mo.for 24 mo.*</p>
               </div>
             </div>
           </div>
-          <div className="col-3">
+          <div className="">
             <div className="famous-card position-relative">
-              <img src={famous2} className="img-fluid" alt="famous" />
-              <div className="famous-content position-absolute">
+              <img src={famous2} className="w-full h-[400px]" alt="famous" />
+              <div className="top-0 absolute">
                 <h5>Studio Display</h5>
                 <h6>600 hits of brightness.</h6>
                 <p>27-inch5K Retina display</p>
@@ -201,10 +202,10 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-3">
+          <div className="">
             <div className="famous-card position-relative">
-              <img src={famous3} className="img-fluid" alt="famous" />
-              <div className="famous-content position-absolute">
+              <img src={famous3} className="w-full h-[400px]" alt="famous" />
+              <div className="top-0 absolute">
                 <h5>Smartphones</h5>
                 <h6>Smartphone 13 Pro.</h6>
                 <p>New in Green. From $999.00 or $41.60/mo. for 24 mo. Footnotes*</p>
@@ -212,10 +213,10 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-3">
-            <div className="famous-card position-relative">
-              <img src={famous4} className="img-fluid" alt="famous" />
-              <div className="famous-content position-absolute">
+          <div className="">
+            <div className="relative">
+              <img src={famous4} className="w-full h-[400px]" alt="famous" />
+              <div className="top-0 absolute">
                 <h5>Home speakers</h5>
                 <h6>Room-filling sound</h6>
                 <p>From $600 or $76.56/mo. for 12 mo.*</p>
@@ -225,24 +226,24 @@ function Home() {
         </div>
       </div>
 
-      <div class1="special-wrapper py-5 home-wrapper-2">
+      <div class1="w-full py-5 ">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading ">Special Products</h3>
           </div>
         </div>
-        <div className="row">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <SpecialProduct />
           <SpecialProduct />
           <SpecialProduct />
         </div>
       </div>
 
-      <div class1="popular-wrapper py-5 home-wrapper-2">
+      <div class1="w-full py-5 ">
         <div className="row d-flex  justify-content-center">
           <h3 className="section-heading ">Our Popular Products</h3>
         </div>
-        <div className="row">
+        <div className="w-full  grid center grid-cols-1 md:grid-cols-4">
           <ProductCard />
           <ProductCard />
           <ProductCard />
@@ -250,7 +251,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="marque-wrapper home-wrapper-2 py-5">
+      <div className="w-full py-5">
         <div className="row">
           <div className="col-12">
             <div className="marque-inner-wrapper card-wrapper">
@@ -285,21 +286,21 @@ function Home() {
         </div>
       </div>
 
-      <div className="blog-wrapper py-5 home-wrapper-2">
+      <div className="w-full py-5 ">
         <div className="">
           <h3 className="section-heading">Our Latest Blogs</h3>
         </div>
-        <div className="row">
-          <div className="col-3">
+        <div className="grid gap-2 grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="">
             <BlogCard />
           </div>
-          <div className="col-3">
+          <div className="">
             <BlogCard />
           </div>
-          <div className="col-3">
+          <div className="">
             <BlogCard />
           </div>
-          <div className="col-3">
+          <div className="">
             <BlogCard />
           </div>
         </div>

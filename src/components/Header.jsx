@@ -8,7 +8,7 @@ import { RiShoppingCart2Fill } from "react-icons/ri";
 
 function Header() {
   return (
-    <>
+    <div className="w-screen">
       <header className="w-full p-3 justify-center bg-[#131921] border-b border-slate-500">
         <div className="w-full max-w-7xl mx-auto flex justify-between text-sm">
           <div className="">
@@ -41,7 +41,7 @@ function Header() {
                 </div>
               </div>
             
-            <div className="flex">
+            <div className="w-full flex">
               <div className="flex items-center space-x-2">
                 <div>
                   <Link to="/compare-product" className="d-flex align-items-center gap-10 text-white">
@@ -62,10 +62,10 @@ function Header() {
                   </Link>
                 </div>
                 <div>
-                  <Link to="/cart" className="d-flex align-items-center gap-10 text-white position-relative">
+                  <Link to="/cart" className="d-flex align-items-center gap-10 text-white relative">
                     <RiShoppingCart2Fill className="text-warning fs-3" />
                     <div className="d-flex flex-column gap-10">
-                      <span className="number text-light position-absolute">0</span>
+                      <span className="number text-light absolute">0</span>
                       {/* <p className="mb-0">$ 500</p> */}
                     </div>
                   </Link>
@@ -74,8 +74,8 @@ function Header() {
             </div>
          </div>
       </header>
-      <header className="bg-[#232f3e] text-slate-200 py-3">
-        <div className="container-xxl">
+      <header className="w-full bg-[#232f3e] text-slate-200 py-3">
+        <div className="">
           <div className="row">
             <div className="col-12">
               <div className="menu-bottom d-flex align-items-center gap-30">
@@ -122,7 +122,7 @@ function Header() {
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 }
 
