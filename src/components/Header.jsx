@@ -9,44 +9,40 @@ import { RiShoppingCart2Fill } from "react-icons/ri";
 function Header() {
   return (
     <>
-      <header className="header-top-strip py-3">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-6">
-              <p className="text-white mb-0">Free Shipping Over $100 & Free Returns</p>
-            </div>
-            <div className="col-6">
-              <p className="text-end text-white mb-0">
-                Hotline :{" "}
-                <a className="text-white" href="tel:+234 8036275526">
-                  +234 8036275526
-                </a>
-              </p>
-            </div>
+      <header className="w-full p-3 justify-center bg-[#131921] border-b border-slate-500">
+        <div className="w-full max-w-7xl mx-auto flex justify-between text-sm">
+          <div className="">
+            <p className="text-white mb-0">Free Shipping Over $100 & Free Returns</p>
+          </div>
+          <div className="col-6">
+            <p className="text-end text-white mb-0">
+              Hotline :{" "}
+              <a className="text-white" href="tel:+234 8036275526">
+                +234 8036275526
+              </a>
+            </p>
           </div>
         </div>
       </header>
-      <header className="header-upper py-3">
-        <div className="container-xxl">
-          <div className="row d-flex align-items-center justify-content-between">
-            <div className="col-xs-12 col-md-7">
-              <div className="d-flex gap-10 align-items-center">
+      <header className="w-full p-3 justify-center bg-[#131921] border-b border-slate-500">
+        <div className="w-full max-w-7xl mx-auto flex justify-between">
+              <div className="flex items-center space-x-2">
                 <h5>
                   <Link className="text-white" to="/">
                     Martbay
                   </Link>
                 </h5>
 
-                <div className="input-group">
-                  <input type="text" className="form-control py-2" placeholder="Search Product Here..." aria-label="Search Product Here..." aria-describedby="basic-addon2" />
-                  <span className="input-group-text" id="basic-addon2">
+                <div className="flex w-full">
+                  <input type="text" className="grow p-2" placeholder="Search Product Here..." aria-label="Search Product Here..." aria-describedby="basic-addon2" />
+                  <span className="rounded-none bg-slate-300 flex items-center px-2" id="basic-addon2">
                     <BiSearch className="fs-3" />
                   </span>
                 </div>
               </div>
-            </div>
-            <div className="col-xs-12 col-md-5">
-              <div className="header-upper-links d-flex align-items-center justify-content-between">
+            
+            <div className="flex">
+              <div className="flex items-center space-x-2">
                 <div>
                   <Link to="/compare-product" className="d-flex align-items-center gap-10 text-white">
                     <MdOutlineCropRotate fontSize="xlarge" className="text-white fs-3" />
@@ -76,10 +72,9 @@ function Header() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </header>
-      <header className="header-bottom py-3">
+      <header className="bg-[#232f3e] text-slate-200 py-3">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">

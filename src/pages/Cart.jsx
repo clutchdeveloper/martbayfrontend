@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../components/Container"
+
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import watch from "../images/watch.jpg";
@@ -11,7 +11,7 @@ function Cart() {
     <>
       <Meta title="Cart" />
       <BreadCrumb title="Cart" />
-      <Container class1="cart-wrapper home-wrapper-2 py-2">
+      <div class1="cart-wrapper home-wrapper-2 py-2">
         
           <div className="row">
             <div className="col-12">
@@ -60,7 +60,7 @@ function Cart() {
               </div>
             </div>
           </div>
-      </Container>
+      </div>
     </>
   );
 }

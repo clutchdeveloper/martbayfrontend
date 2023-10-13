@@ -2,14 +2,13 @@ import React from "react";
 
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
-import Container from "../components/Container";
 
 function WishList() {
   return (
     <>
       <Meta title="Wish List" />
       <BreadCrumb title="Wish List" />
-      <Container class1="wishlist-wrapper home-wrapper-2 py-5">
+      <div className="wishlist-wrapper home-wrapper-2 py-5">
        
           <div className="row">
             <div className="col-3">
@@ -52,7 +51,7 @@ function WishList() {
             </div>
           </div>
         
-      </Container>
+      </div>
     </>
   );
 }

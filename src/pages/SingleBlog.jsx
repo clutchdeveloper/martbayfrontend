@@ -3,7 +3,6 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
-import Container from "../components/Container";
 
 function SingleBlog() {
   return (
@@ -11,7 +10,7 @@ function SingleBlog() {
       <Meta title="Dynamic Blog Name" />
       <BreadCrumb title="Dynamic Blog Name" />
 
-      <Container class1="blog-wrapper home-wrapper-2 py-5">
+      <div class1="blog-wrapper home-wrapper-2 py-5">
       
           <div className="row">
             <div className="single-blog-card">
@@ -27,7 +26,7 @@ function SingleBlog() {
               </p>
             </div>
           </div>
-        </Container>
+        </div>
       
     </>
   );

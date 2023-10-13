@@ -3,14 +3,13 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import { BiSolidHome, BiSolidPhoneCall, BiSolidInfoCircle } from "react-icons/bi";
 import { HiMail } from "react-icons/hi";
-import Container from "../components/Container";
 
 function Contact() {
   return (
     <>
       <Meta title="Contact Us" />
       <BreadCrumb title="Contact Us" />
-      <Container class1="contact-wrapper py-5 home-wrapper-2">
+      <div className="contact-wrapper py-5 home-wrapper-2">
        
           <div className="row">
             <div className="col-12">
@@ -71,7 +70,7 @@ function Contact() {
               </div>
             </div>
           </div>
-        </Container>
+        </div>
       
     </>
   );

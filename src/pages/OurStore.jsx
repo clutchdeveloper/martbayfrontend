@@ -9,7 +9,6 @@ import filter2 from "../images/gr3.svg";
 import filter3 from "../images/gr2.svg";
 import filter4 from "../images/gr.svg";
 import watch from "../images/watch-4.jpg";
-import Container from "../components/Container";
 
 function OurStore() {
   const [grid, setGrid] = useState(4);
@@ -32,7 +31,7 @@ function OurStore() {
     <>
       <Meta title="Store" />
       <BreadCrumb title="Store" />
-      <Container class1="store-wrapper py-5 home-wrapper-2">
+      <div class1="store-wrapper py-5 home-wrapper-2">
 
           <div className="row">
             <div className="col-3">
@@ -215,7 +214,7 @@ function OurStore() {
               </div>
             </div>
           </div>
-        </Container>
+        </div>
      
     </>
   );

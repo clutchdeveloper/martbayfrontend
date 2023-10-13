@@ -13,7 +13,7 @@ import newsletter from "../images/newsletter.png";
 function Footer() {
   return (
     <>
-      <footer className="py-4">
+      <footer className="bg-[#131921] py-4">
         <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-5">
@@ -33,7 +33,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <footer className="py-4">
+      <footer className="bg-[#131921] py-4">
         <div className="container-xxl">
           <div className="row">
             <div className="col-4">
@@ -82,7 +82,9 @@ function Footer() {
                 <Link to="/terms-and-conditions" className="text-white py-2 mb-1">
                   Terms & Conditions
                 </Link>
-                <Link to="/blogs" className="text-white py-2 mb-1">Blogs</Link>
+                <Link to="/blogs" className="text-white py-2 mb-1">
+                  Blogs
+                </Link>
               </div>
             </div>
             <div className="col-3">
@@ -105,7 +107,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <footer className="py-4">
+      <footer className="bg-[#131921] py-4">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">

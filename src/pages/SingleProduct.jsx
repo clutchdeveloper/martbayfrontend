@@ -7,7 +7,7 @@ import { Rating } from "react-simple-star-rating";
 import ReactImageZoom from "react-image-zoom";
 import { BiGitCompare } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
-import Container from "../components/Container";
+
 
 function SingleProduct() {
   const props = { width: 400, height: 600, zoomWidth: 600, img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg" };
@@ -44,7 +44,7 @@ const copyToClipboard = (text) => {
     <>
       <Meta title="Product Name" />
       <BreadCrumb title="Product Name" />
-      <Container class1="main-product-wrapper py-5 home-wrapper-2">
+      <div className="main-product-wrapper py-5 home-wrapper-2">
        
           <div className="row">
             <div className="col-6">
@@ -183,8 +183,8 @@ const copyToClipboard = (text) => {
             </div>
           </div>
         
-      </Container>
-      <Container class1="description-wrapper py-5 home-wrapper-2">
+      </div>
+      <div className="description-wrapper py-5 home-wrapper-2">
        
           <div className="row">
             <div className="col-12">
@@ -195,8 +195,8 @@ const copyToClipboard = (text) => {
             </div>
           </div>
        
-      </Container>
-      <Container id="review" class1="reviews-wrapper  home-wrapper-2">
+      </div>
+      <div id="review" className="reviews-wrapper  home-wrapper-2">
        
           <div className="row">
             <div className="col-12">
@@ -279,8 +279,8 @@ const copyToClipboard = (text) => {
             </div>
           </div>
         
-      </Container>
-      <Container class1="popular-wrapper py-5 home-wrapper-2">
+      </div>
+      <div className="popular-wrapper py-5 home-wrapper-2">
         
           <div className="row d-flex  justify-content-center">
             <h3 className="section-heading ">Our Popular Products</h3>
@@ -289,7 +289,7 @@ const copyToClipboard = (text) => {
             <ProductCard />
           </div>
       
-      </Container>
+      </div>
     </>
   );
 }

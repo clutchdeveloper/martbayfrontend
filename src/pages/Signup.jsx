@@ -2,7 +2,6 @@ import React from 'react'
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import { Link } from 'react-router-dom';
-import Container from '../components/Container';
 import CustomInput from '../components/CustomInput';
 
 function Signup() {
@@ -11,7 +10,7 @@ function Signup() {
     <>
       <Meta title="Sign Up" />
       <BreadCrumb title="Sign Up" />
-      <Container class1="login-wrapper home-wrapper-2 py-5">
+      <div className="login-wrapper home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
             <div className="auth-card">
@@ -34,7 +33,7 @@ function Signup() {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </>
   );
 }
