@@ -34,7 +34,7 @@ function Home() {
   return (
     <>
       <div className="w-full flex items-center ">
-        <div className="w-full max-w-7xl gap-2  mx-auto grid grid-cols-1 md:grid-cols-2 p-2">
+        <div className="w-full max-w-7xl gap-2  mx-auto grid grid-cols-1 md:grid-cols-2 py-2">
           <div className="relative">
             <img src={banner1} className="" alt="main banner" />
             <div className="absolute top-0 z-10">
@@ -87,7 +87,7 @@ function Home() {
           <div className="w-full flex justify-between ">
             {services?.map((i, j) => {
               return (
-                <div className="flex space-x-2 items-center" key={j}>
+                <div className="flex flex-col md:flex-row space-y-2 text-center md:text-start space-x-2 items-center" key={j}>
                   <img src={i.image} className="" alt="offer" />
                   <div className="text-sm md:text-[16px]">
                     <h6>{i.title}</h6>

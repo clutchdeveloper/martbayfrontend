@@ -40,10 +40,10 @@ function ProductCard(props) {
             <img src={watch} className="w-full" alt="product image" />
             <img src={tv} className="w-full" alt="product image" />
           </div>
-          <div className="">
+          <div className="flex flex-col">
             <h6 className="">Haweui</h6>
             <h5 className="">Kids headphones bulk 10 pack multi colored for students</h5>
-            <div className="flex ">
+            <div className="">
               <Rating
                 onClick={handleRating}
                 onPointerEnter={onPointerEnter}
