@@ -19,9 +19,9 @@ function SpecialProduct() {
     const onPointerLeave = () => console.log("Leave");
     const onPointerMove = (value, index) => console.log(value, index);
   return (
-    <div className="col-6 mb-3">
+    <div className="mb-3">
       <div className="special-product-card">
-        <div className="d-flex justify-content-between">
+        <div className="flex justify-between">
           <div>
             <img src={watch} className="img-fluid" alt="watch" />
           </div>

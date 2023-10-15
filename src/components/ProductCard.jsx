@@ -29,9 +29,9 @@ function ProductCard(props) {
   //{`col-3 ${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}
   return (
     <>
-      <div className="w-full flex flex-col bg-red-300">
+      <div className="flex">
         <Link to={`${location.pathname !== "/:id" ? "/product/:id" : location.pathname == "/product/:id" ? "/product/:id" : ":id"}`} className="relative">
-          <div className="absolute">
+          <div className="absolute top-0 right-7">
             <button className="border-0 bg-transparent">
               <AiOutlineHeart className="icon" />
             </button>
@@ -40,17 +40,17 @@ function ProductCard(props) {
             <img src={watch} className="w-full" alt="product image" />
             <img src={tv} className="w-full" alt="product image" />
           </div>
-          <div className="product-details">
-            <h6 className="brand">Haweui</h6>
-            <h5 className="product-title">Kids headphones bulk 10 pack multi colored for students</h5>
-            <div className="flex">
+          <div className="">
+            <h6 className="">Haweui</h6>
+            <h5 className="">Kids headphones bulk 10 pack multi colored for students</h5>
+            <div className="flex ">
               <Rating
                 onClick={handleRating}
                 onPointerEnter={onPointerEnter}
                 onPointerLeave={onPointerLeave}
                 onPointerMove={onPointerMove}
                 /* Available Props */
-                size={24}
+                size={15}
                 initialValue={3}
                 readonly={true}
               />

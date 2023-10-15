@@ -255,29 +255,29 @@ function Home() {
         <div className="row">
           <div className="col-12">
             <div className="marque-inner-wrapper card-wrapper">
-              <Marquee className="d-flex">
-                <div className="mx-4 w-25">
+              <Marquee className="flex">
+                <div className="mx-4 w-[300px]">
                   <img src={brand1} alt="brand" />
                 </div>
-                <div className="mx-4 w-25">
+                <div className="mx-4 w-[300px]">
                   <img src={brand2} alt="brand" />
                 </div>
-                <div className="mx-4 w-25">
+                <div className="mx-4 w-[300px]">
                   <img src={brand3} alt="brand" />
                 </div>
-                <div className="mx-4 w-25">
+                <div className="mx-4 w-[300px]">
                   <img src={brand4} alt="brand" />
                 </div>
-                <div className="mx-4 w-25">
+                <div className="mx-4 ww-[300px]">
                   <img src={brand5} alt="brand" />
                 </div>
-                <div className="mx-4 w-25">
+                <div className="mx-4 w-[300px]">
                   <img src={brand6} alt="brand" />
                 </div>
-                <div className="mx-4 w-25">
+                <div className="mx-4 w-[300px]">
                   <img src={brand7} alt="brand" />
                 </div>
-                <div className="mx-4 w-25">
+                <div className="mx-4 w-[300px]">
                   <img src={brand8} alt="brand" />
                 </div>
               </Marquee>
