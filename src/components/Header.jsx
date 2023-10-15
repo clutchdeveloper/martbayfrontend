@@ -8,7 +8,8 @@ import { RiShoppingCart2Fill } from "react-icons/ri";
 
 function Header() {
   return (
-    <div className="w-screen">
+    
+    <div className="w-full">
       <header className="w-full p-3 justify-center bg-[#131921] border-b border-slate-500">
         <div className="w-full max-w-7xl mx-auto flex justify-between text-sm">
           <div className="">

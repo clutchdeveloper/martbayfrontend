@@ -12,17 +12,17 @@ import newsletter from "../images/newsletter.png";
 
 function Footer() {
   return (
+    
     <>
-      <footer className="bg-[#131921] py-4">
-        <div className="container-xxl">
-          <div className="row align-items-center">
-            <div className="col-5">
+      <footer className="bg-[#131921] py-4 w-full">
+          <div className="items-center">
+            <div className="">
               <div className="footer-top-data d-flex gap-30 align-items-center">
                 <img src={newsletter} alt="newsletter" />
                 <h4 className="text-white mb-0">Sign Up for Newsletter</h4>
               </div>
             </div>
-            <div className="col-7">
+            <div className="">
               <div className="input-group">
                 <input type="text" className="form-control py-1" placeholder="Your Email Address..." aria-label="Your Email Address..." aria-describedby="basic-addon2" />
                 <span className="input-group-text p-2" id="basic-addon2">
@@ -30,13 +30,13 @@ function Footer() {
                 </span>
               </div>
             </div>
-          </div>
+         
         </div>
       </footer>
-      <footer className="bg-[#131921] py-4">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-4">
+      <footer className="bg-[#131921] py-4 w-full">
+        <div className="">
+          <div className="">
+            <div className="">
               <h4 className="text-white mb-4">Contact Us</h4>
               <div>
                 <address className="text-white fs-6">
@@ -67,7 +67,7 @@ function Footer() {
                 </div> */}
               </div>
             </div>
-            <div className="col-3">
+            <div className="">
               <h4 className="text-white mb-4">Information</h4>
               <div className="footer-links d-flex flex-column">
                 <Link to="/privacy-policy" className="text-white py-2 mb-1">
@@ -87,7 +87,7 @@ function Footer() {
                 </Link>
               </div>
             </div>
-            <div className="col-3">
+            <div className="">
               <h4 className="text-white mb-4">Account</h4>
               <div className="footer-links d-flex flex-column">
                 <Link className="text-white py-2 mb-1">About Us</Link>
@@ -95,7 +95,7 @@ function Footer() {
                 <Link className="text-white py-2 mb-1">Contact</Link>
               </div>
             </div>
-            <div className="col-2">
+            <div className="">
               <h4 className="text-white mb-4">Quick Links</h4>
               <div className="footer-links d-flex flex-column">
                 <Link className="text-white py-2 mb-1">Laptops</Link>
@@ -107,10 +107,10 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <footer className="bg-[#131921] py-4">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
+      <footer className="bg-[#131921] w-full py-4">
+        <div className="">
+          <div className="">
+            <div className="">
               <p className="text-center mb-0 text-white">&copy; {new Date().getFullYear()} | Powered by Clutchdev</p>
             </div>
           </div>

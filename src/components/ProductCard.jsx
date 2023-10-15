@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Rating } from "react-simple-star-rating";
 import { Link, useLocation } from "react-router-dom";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FaRegEye } from "react-icons/fa";
@@ -44,16 +43,15 @@ function ProductCard(props) {
             <h6 className="">Haweui</h6>
             <h5 className="">Kids headphones bulk 10 pack multi colored for students</h5>
             <div className="">
-              <Rating
+              {/* <Rating
                 onClick={handleRating}
                 onPointerEnter={onPointerEnter}
                 onPointerLeave={onPointerLeave}
                 onPointerMove={onPointerMove}
-                /* Available Props */
                 size={15}
                 initialValue={3}
                 readonly={true}
-              />
+              /> */}
             </div>
             <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vel eius modi culpa placeat harum repudiandae eligendi possimus voluptatibus. Incidunt.

@@ -102,70 +102,43 @@ function Home() {
 
       <div class1="w-full py-5">
         <div className="w-full mx-auto flex py-5 px-2 max-w-7xl">
-          <div className="">
-            <div className="categories d-flex d-xs-column justify-content-between align-items-center flex-wrap">
-              <div className="col-3 d-flex  align-items-center">
+         
+            <div className="w-full flex justify-between items-center flex-wrap">
+              <div className="flex items-center flex-col md:flex-row">
                 <div>
                   <h6>Cameras</h6>
                   <p>10 Items</p>
                 </div>
                 <img src={camera} alt="cameras" className="img-fluid" />
               </div>
-              <div className="col-3 d-flex  align-items-center">
+              <div className="flex items-center flex-col md:flex-row">
                 <div>
                   <h6>Smart Tv</h6>
                   <p>10 Items</p>
                 </div>
                 <img src={tv} alt="smartscreen" className="img-fluid" />
               </div>
-              <div className="col-3 d-flex  align-items-center">
+              <div className="flex  items-center flex-col md:flex-row">
                 <div>
                   <h6>Smart Watches</h6>
                   <p>10 Items</p>
                 </div>
                 <img src={headphone} alt="headphone" className="img-fluid" />
               </div>
-              <div className="col-3 d-flex  align-items-center">
+              <div className="flex items-center flex-col md:flex-row ">
                 <div>
                   <h6>Music & Gaming</h6>
                   <p>10 Items</p>
                 </div>
                 <img src={watch} className="img-fluid" alt="watch" />
               </div>
-              <div className="col-3 d-flex  align-items-center">
-                <div>
-                  <h6>Cameras</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src={camera} alt="cameras" className="img-fluid" />
-              </div>
-              <div className="col-3 d-flex  align-items-center">
-                <div>
-                  <h6>Smart Tv</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src={tv} alt="smartscreen" className="img-fluid" />
-              </div>
-              <div className="col-3 d-flex  align-items-center">
-                <div>
-                  <h6>Smart Watches</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src={headphone} alt="headphone" className="img-fluid" />
-              </div>
-              <div className="col-3 d-flex  align-items-center">
-                <div>
-                  <h6>Music & Gaming</h6>
-                  <p>10 Items</p>
-                </div>
-                <img src={watch} className="img-fluid" alt="watch" />
-              </div>
+       
             </div>
           </div>
-        </div>
+       
       </div>
 
-      <div className="w-full py-5 ">
+ <div className="w-full py-5 ">
         <div className="w-full mx-auto max-w-7xl flex flex-col items-center">
           <div className="col-12">
             <h3 className="section-heading ">Featured Collection</h3>
@@ -177,7 +150,7 @@ function Home() {
             <ProductCard />
           </div>
         </div>
-      </div>
+      </div>     
 
       <div class1="w-full py-5">
         <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -227,12 +200,12 @@ function Home() {
       </div>
 
       <div class1="w-full py-5 ">
-        <div className="row">
-          <div className="col-12">
+        <div className="">
+          <div className="">
             <h3 className="section-heading ">Special Products</h3>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3">
           <SpecialProduct />
           <SpecialProduct />
           <SpecialProduct />
@@ -240,7 +213,7 @@ function Home() {
       </div>
 
       <div class1="w-full py-5 ">
-        <div className="row d-flex  justify-content-center">
+        <div className="flex  justify-content-center">
           <h3 className="section-heading ">Our Popular Products</h3>
         </div>
         <div className="w-full  grid center grid-cols-1 md:grid-cols-4">
@@ -252,8 +225,8 @@ function Home() {
       </div>
 
       <div className="w-full py-5">
-        <div className="row">
-          <div className="col-12">
+        <div className="">
+          <div className="">
             <div className="marque-inner-wrapper card-wrapper">
               <Marquee className="flex">
                 <div className="mx-4 w-[300px]">

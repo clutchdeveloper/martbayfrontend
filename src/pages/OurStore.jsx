@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
-import { Rating } from "react-simple-star-rating";
 import ProductCard from "../components/ProductCard";
 import Color from "../components/Color";
 import filter1 from "../images/gr.svg";
@@ -114,16 +113,16 @@ function OurStore() {
                     </div>
                     <div className="w-50 d-flex flex-column">
                       <h5>Kids headphones bulk 10 pack multi colored for students</h5>
-                      <Rating
+                      {/* <Rating
                         onClick={handleRating}
                         onPointerEnter={onPointerEnter}
                         onPointerLeave={onPointerLeave}
                         onPointerMove={onPointerMove}
-                        /* Available Props */
+                        
                         size={24}
                         initialValue={3}
                         readonly={true}
-                      />
+                      /> */}
                       <b>$ 300</b>
                     </div>
                   </div>

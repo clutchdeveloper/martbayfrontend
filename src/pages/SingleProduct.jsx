@@ -3,7 +3,7 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import Color from "../components/Color";
 import ProductCard from "../components/ProductCard";
-import { Rating } from "react-simple-star-rating";
+
 import ReactImageZoom from "react-image-zoom";
 import { BiGitCompare } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
@@ -206,16 +206,15 @@ const copyToClipboard = (text) => {
                   <div>
                     <h4 className="mb-2">Customer Reviews</h4>
                     <div className="d-flex gap-10                   align-items-center">
-                      <Rating
+                      {/* <Rating
                         onClick={handleRating}
                         onPointerEnter={onPointerEnter}
                         onPointerLeave={onPointerLeave}
                         onPointerMove={onPointerMove}
-                        /* Available Props */
                         size={20}
                         initialValue={4}
                         readonly={true}
-                      />
+                      /> */}
                       <p className="mb-0">Based on 2 Reviews</p>
                     </div>
                   </div>
